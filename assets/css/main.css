@@ -65,7 +65,7 @@ input{
     font-family:"Iranian Sans Regular" !important;
     font-size:16px;
     text-align: center;
-    margin-top:70% !important;
+    margin-top:60% !important;
     
   }
   
@@ -241,6 +241,7 @@ input{
     display:none;
     background-color: #2e3192;
     opacity: 0.9;
+    height: 250px;
 }
 .cc:hover .gallery{
     
@@ -306,5 +307,54 @@ div.desc {
     background: #2e3192 !important;
   }
 
- 
+.mega-menu{
+    
+    border-radius: 5px !important;
+    width: 900px !important;
+    z-index: 1;
+    top: 56px;
+    right: 0;
+    left: 0;
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: rgba(255, 206, 0, 0.5);
+    min-height:280px
+}
+.nav-link:hover{
+    color: #ffce00 !important;
+}
+.mega-menu-item:hover{
+    border: 1px solid #2e3192 !important;
+    color: #2e3192 !important;
+}
+.mega-menu-item:hover .mega-menu-desc{
+    color: #2e3192 !important;
+}
+
+.dropdown-toggle::after {
+    display:none;
+}
+.mega-menu-item {
+    border: 1px solid #b39000;
+    margin: 5px  !important;
+    float: left;
+    width: 90%;
+    min-height:250px;
+    background-color: #ffe165 !important;
+    opacity: 1 !important;
+}
+.mega-menu-item img { 
+    width: 95%;
+    height: 200px;
+    margin:5px;
+}
+
+.mega-menu-desc {
+    color: #b39000;
+    font-family:"Iranian Sans" !important;
+    font-weight: bold;
+    font-size:12px;
+    text-align: center;
+    margin:5px;
+}
 
