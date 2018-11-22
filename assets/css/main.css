@@ -52,6 +52,21 @@ input{
     border-radius: 5px  !important;
     
 }
+.view-btn{
+    border: 1px solid #ffce00 !important;
+    background-color: #ffce00 !important;
+    border-radius: 2px  !important;
+    width:38%;
+    font-size:22px;
+    color: #b39000 !important;
+}
+.btn1{
+    margin: 110% 2% 5% 10% !important;
+}
+.btn2{
+    margin-bottom: 5% !important;
+    margin-top: 110% !important;
+}
 .badge{
     border-radius: 10px !important;
     background-color: white !important;
@@ -132,7 +147,7 @@ input{
 }
 .slider{
     position: relative !important;
-    bottom: 55px !important;
+    bottom: 57px !important;
     height: 500px;;
 }
 .arrow-box{
@@ -144,7 +159,7 @@ input{
     opacity: 0.8;
 }
 .slider .flickity-page-dots {
-    bottom: 105px !important;
+    bottom: 104px !important;
     z-index: 100;
     opacity: 1 ;
   }
@@ -183,11 +198,11 @@ input{
   }
   /* position outside */
   .slider .flickity-prev-next-button.previous {
-    top: 384.9px !important;
+    top: 386.7px !important;
     left: 0px !important;
   }
   .slider .flickity-prev-next-button.next {
-    top: 384.9px !important;
+    top: 386.7px !important;
     right: 0px !important;
   }
   .title-box{
@@ -201,33 +216,52 @@ input{
     padding: 2px 0px !important;
     
   }
-  .books-main-box{
+  .book-title{
+    color: #2e3192;
+    font-family:"Iranian Sans Regular" !important;
+    font-size:16px;
+    text-align: center;
+    margin:0px !important;
+    padding: 2px 0px !important;
     
   }
-  .books-box{
-    border: 1px solid #b39000;
-    margin: 15px 5px!important;
-  }
+  
+ 
  
   /*gallery*/
   div.gallery {
-    
-    margin: 5px 0px !important;
+    border: 1px solid #b39000;
+    margin: 5px  !important;
     float: left;
+    width: 90%;
+    min-height:320px;
 }
 
-.book-hv:hover {
-    border: 1px solid #2e3192;
+.book-hv {
+    display:none;
+    background-color: #2e3192;
+}
+.cc:hover .gallery{
+    
+    display: none;
+
+}
+.cc:hover .book-hv {
+    
+    display: block;
+
 }
 
-  
+
+.books-main-box{
+    margin-top: 120px;
+}
 div.gallery img { 
+    width: 95%;
     height: 250px;
     margin:5px;
 }
-.border-box .flickity-prev-next-button {
-   display: none !important;
-  }
+
 div.desc {
     color: #2e3192;
     font-family:"Iranian Sans Regular" !important;
@@ -237,16 +271,39 @@ div.desc {
 }
 
 .carousel-cell {
-    width: 30%;
-    height: 290px;
-    margin:2px;
+    width: 25%;
+    min-height: 340px;
+    margin: 2px !important;
+}
+.books-box{
+    border: 1px solid #b39000;
+    
 }
 .group{
-    border: 1px solid #b39000;
+    padding: 15px 15px 20px 15px!important;
 }
 .group .flickity-prev-next-button {
     display: none !important;
+    
 }
+.group .flickity-page-dots {
+    bottom: 7px !important;
+    z-index: 100;
+    opacity: 1 ;
+  }
+
+ /* white circles */
+ .group .flickity-page-dots .dot {
+    margin: 2px !important;
+    width: 10px !important;
+    height: 10px !important;
+    opacity: 1 !important;
+    background: #ffce00 !important;
+  }
+  /* fill-in selected dot */
+  .group .flickity-page-dots .dot.is-selected {
+    background: #2e3192 !important;
+  }
 
  
 
