@@ -60,12 +60,21 @@ input{
     font-size:22px;
     color: #b39000 !important;
 }
+.book-title{
+    color: white;
+    font-family:"Iranian Sans Regular" !important;
+    font-size:16px;
+    text-align: center;
+    margin-top:70% !important;
+    
+  }
+  
 .btn1{
-    margin: 110% 2% 5% 10% !important;
+    margin: 40% 2% 5% 10% !important;
 }
 .btn2{
     margin-bottom: 5% !important;
-    margin-top: 110% !important;
+    margin-top: 40% !important;
 }
 .badge{
     border-radius: 10px !important;
@@ -216,16 +225,7 @@ input{
     padding: 2px 0px !important;
     
   }
-  .book-title{
-    color: #2e3192;
-    font-family:"Iranian Sans Regular" !important;
-    font-size:16px;
-    text-align: center;
-    margin:0px !important;
-    padding: 2px 0px !important;
-    
-  }
-  
+ 
  
  
   /*gallery*/
@@ -240,6 +240,7 @@ input{
 .book-hv {
     display:none;
     background-color: #2e3192;
+    opacity: 0.9;
 }
 .cc:hover .gallery{
     
