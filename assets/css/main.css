@@ -89,7 +89,7 @@ input{
     
 }
 
-@media screen and (max-width: 764px) {
+@media screen and (max-width: 767.5px) {
     #my-nav-container{
 
         bottom:0px !important;
@@ -155,9 +155,14 @@ input{
     margin-right: auto;
 }
 .my-nav-item{
-    margin:0px 20px;
+    margin:0px 10px;
     font-family:"Iranian Sans Regular" !important;
     
+}
+@media screen and (max-width: 900.5px){
+    .my-nav-item {
+    margin: 0px 5px;
+    }
 }
 .nav-link{
     font-size:15px;
@@ -332,6 +337,76 @@ div.desc {
   .group .flickity-page-dots .dot.is-selected {
     background: #2e3192 !important;
   }
+  .mega-menu2{
+    
+    right: -250% !important;
+    position: absolute !important;
+    border-radius: 5px !important;
+    width: 900px !important;
+    z-index: 1;
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: rgba(255, 206, 0, 0.5);
+    min-height:280px;
+    
+    
+    
+}
+
+@media (min-width: 767px) and (max-width: 781px){
+    .mega-menu2 {
+    max-width: 630px;
+    right: -390% !important;
+}
+}
+@media (min-width: 781px) and (max-width: 800.5px){
+    .mega-menu2 {
+    max-width: 630px;
+    right: -350% !important;
+}
+}
+@media (min-width: 800px) and (max-width: 820px){
+    .mega-menu2 {
+    max-width: 630px;
+    right: -310% !important;
+}
+}
+@media (min-width: 820px) and (max-width: 845px){
+    .mega-menu2 {
+    max-width: 650px;
+    right: -310% !important;
+}
+}
+@media (min-width: 845px) and (max-width: 900px){
+    .mega-menu2 {
+    max-width: 700px;
+    right: -320% !important;
+}
+}
+@media (min-width: 900px) and (max-width: 920px){
+    .mega-menu2 {
+    max-width: 750px;
+    right: -380% !important;
+}
+}
+@media (min-width: 965) and (max-width: 985px){
+    .mega-menu2 {
+    max-width: 800px;
+    right: -360% !important;
+}
+}
+@media (min-width: 985px) and (max-width: 1100px){
+    .mega-menu2 {
+    max-width: 830px;
+    right: -360% !important;
+}
+}
+@media (min-width: 1100px) and (max-width: 1200px){
+    .mega-menu2 {
+    max-width: 850px;
+    right: -350% !important;
+}
+}
 
 .mega-menu{
     
@@ -339,9 +414,7 @@ div.desc {
     border-radius: 5px !important;
     width: 900px !important;
     z-index: 1;
-    top: 56px;
-    right: 0 !important;
-    left: 0;
+    right: -50% !important;
     margin-bottom: 30px;
     text-align: center;
     background-color: rgba(255, 206, 0, 0.5);
@@ -349,6 +422,43 @@ div.desc {
     
     
 }
+@media (min-width: 780px) and (max-width: 810.5px){
+    .mega-menu {
+    max-width: 720px;
+    right: -50% !important;
+}
+}
+@media (min-width: 810px) and (max-width: 830.5px){
+    .mega-menu {
+    max-width: 750px;
+    right: -50% !important;
+}
+}
+@media (min-width: 830px) and (max-width: 850.5px){
+    .mega-menu {
+    max-width: 770px;
+    right: -50% !important;
+}
+}
+@media (min-width: 850px) and (max-width: 870.5px){
+    .mega-menu {
+    max-width: 790px;
+    right: -50% !important;
+}
+}
+@media (min-width: 870px) and (max-width: 900.5px){
+    .mega-menu {
+    max-width: 830px;
+    right: -50% !important;
+}
+}
+@media (min-width: 900px) and (max-width: 991.5px){
+    .mega-menu {
+    max-width: 850px;
+    right: -50% !important;
+}
+}
+
 .nav-link:hover{
     color: #ffce00 !important;
 }
@@ -367,7 +477,7 @@ div.desc {
     border: 1px solid #b39000;
     margin: 5px  !important;
     float: left;
-    width: 90%;
+    width: 18.6%;
     min-height:250px;
     background-color: #ffe165 !important;
     opacity: 1 !important;
@@ -386,7 +496,37 @@ div.desc {
     text-align: center;
     margin:5px;
 }
-#navbardrop:hover .mega-menu{
-    display: block;
+.mobile-menu-item{
+    color: white !important;
+    text-align: center !important;
+    border:none !important;
 }
-
+.mobile-menu{
+    
+    background-color: #2e3192 !important;
+    text-align:center;
+}
+.mobile-menu:hover{
+    
+    background-color: #2e3192 !important;
+}
+.dp:hover{
+    
+    background-color: #2e3192 !important;
+}
+.mobile-menu-item:hover{
+    color: #ffce00 !important;
+}
+@media screen and (min-width:767.5px) {
+    .mobile-menu{
+        display: none !important;
+    }
+    
+}
+@media screen and (max-width:767.5px) {
+    .mega-menu{
+        display: none !important;
+    }
+    
+    
+}
