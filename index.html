@@ -142,44 +142,44 @@
                                 <li class="dropdown-item "><a class="mobile-menu-item" href="#">نیمه شعبان</a></li>
                                 <li class="dropdown-item "><a class="mobile-menu-item" href="#">غدیر</a></li>
                             </div>    
-                    <div class="d-flex flex-row container mega-menu2">
-                                    <li class="dropdown-item mega-menu-item">
-                                            <a href="#">
-                                            <img src="assets/img/g.jpg" alt="روضه الواعظین">
-                                            
-                                            <div class="mega-menu-desc">غدیر</div>
-                    
-                                            </a>
-                                        </li>
-                                    
-                                        <li class="dropdown-item mega-menu-item"><a href="#">
-                                            <img src="assets/img/a.jpg" alt="روضه الواعظین">
-                                            
-                                            <div class="mega-menu-desc">محرم</div>
-                    
-                                        </a></li>
-                    
-                                        <li class="dropdown-item mega-menu-item"><a href="#">
-                                            <img src="assets/img/r.jpg" alt="روضه الواعظین">
-                                            
-                                            <div class="mega-menu-desc">اربعین</div>
-                    
-                                        </a></li>
-                    
-                                        <li class="dropdown-item mega-menu-item"><a href="#">
-                                            <img src="assets/img/z.jpg" alt="روضه الواعظین">
-                                            
-                                            <div class="mega-menu-desc">شعبان</div>
-                    
-                                        </a></li>
-                    
-                                        <li class="dropdown-item mega-menu-item"><a href="#">
-                                            <img src="assets/img/r.jpg" alt="روضه الواعظین">
-                                            
-                                            <div class="mega-menu-desc">مبعث</div>
-                    
-                                        </a></li>
-                            </div>
+                            <div class="d-flex flex-row container mega-menu2">
+                                <li class="dropdown-item mega-menu-item">
+                                        <a href="#">
+                                        <img src="assets/img/g.jpg" alt="روضه الواعظین">
+                                        
+                                        <div class="mega-menu-desc">غدیر</div>
+                
+                                        </a>
+                                    </li>
+                                
+                                    <li class="dropdown-item mega-menu-item"><a href="#">
+                                        <img src="assets/img/a.jpg" alt="روضه الواعظین">
+                                        
+                                        <div class="mega-menu-desc">محرم</div>
+                
+                                    </a></li>
+                
+                                    <li class="dropdown-item mega-menu-item"><a href="#">
+                                        <img src="assets/img/r.jpg" alt="روضه الواعظین">
+                                        
+                                        <div class="mega-menu-desc">اربعین</div>
+                
+                                    </a></li>
+                
+                                    <li class="dropdown-item mega-menu-item"><a href="#">
+                                        <img src="assets/img/z.jpg" alt="روضه الواعظین">
+                                        
+                                        <div class="mega-menu-desc">شعبان</div>
+                
+                                    </a></li>
+                
+                                    <li class="dropdown-item mega-menu-item"><a href="#">
+                                        <img src="assets/img/r.jpg" alt="روضه الواعظین">
+                                        
+                                        <div class="mega-menu-desc">مبعث</div>
+                
+                                    </a></li>
+                        </div>
                             
                                 
                     </ul>
@@ -611,13 +611,13 @@
                         </div>
 
                         <div class="p-2 flex-grow-1 flex-column " style="padding: 0px !important;">
-
-                            <div class="p-2 contact-info">تلفن: 37731265 / 02537731265 </div>
-                            <div class="p-2 contact-info">همراه: 09121234567 / 09121234567</div>
-                            <div class="p-2 contact-info">فکس: 0237731265</div>
+                            
+                            <div class="p-2 contact-info">تلفن:  <div style="display:inline;" id="second-phone-number"></div>   /  <div style="display:inline;" id="first-phone-number"></div></div>
+                            <div class="p-2 contact-info">همراه:  <div style="display:inline;" id="second-cell-number"></div>   /  <div style="display:inline;" id="first-cell-number"></div></div>
+                            <div class="p-2 contact-info">فکس: <div style="display:inline;" id="fax-number"></div></div>
                             <div class="p-2 contact-info"><data style="font-family:'Tahoma Regular'">qombook@gmail.com</data>   :رایانامه</div>
                             <div class="p-2 contact-info">آدرس: 
-                                    قم - صفاییه کوچه 28 - انتهای کوچه پلاک 284</div>
+                                    قم - صفاییه کوچه <div style="display:inline;" id="ally-number"></div> - انتهای کوچه پلاک <div style="display:inline;" id="building-number"></div></div>
 
                         </div>
 
@@ -653,7 +653,16 @@
     <script src="assets/js/jquery-1.11.3.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/flickity.pkgd.min.js"></script>
-    
+    <script src="assets/js/persian.min.js"></script>
+    <script>
+    document.getElementById("second-phone-number").innerHTML= persianJs("37731265").englishNumber();
+    document.getElementById("first-phone-number").innerHTML= persianJs("02537731265").englishNumber();
+    document.getElementById("second-cell-number").innerHTML= persianJs("09121234567").englishNumber();
+    document.getElementById("first-cell-number").innerHTML= persianJs("09121234567").englishNumber();
+    document.getElementById("fax-number").innerHTML= persianJs("02537731265").englishNumber();
+    document.getElementById("building-number").innerHTML= persianJs("284").englishNumber();
+    document.getElementById("ally-number").innerHTML= persianJs("28").englishNumber();
+    </script>
     <script>
         $('.main-carousel').flickity({
         // options
