@@ -354,7 +354,7 @@ div.desc {
 }
 
 
-@media (min-width: 710px) and (max-width: 810px){
+@media (min-width: 768px) and (max-width: 810px){
     .mega-menu2 {
     max-width: 600px;
     right: -50% !important;
@@ -519,7 +519,10 @@ transition: all 500ms ease-in;
     
 }
 @media screen and (max-width:767.5px) {
-    .mega-menu{
+    .mega-menu{        
+        display: none !important;
+    }
+    .mega-menu2{        
         display: none !important;
     }
     

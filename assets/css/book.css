@@ -2,6 +2,16 @@
     width:100%;
     height: 100%;
 }
+.book-description-box{
+    margin: 5px 0px 25px 0px!important;
+}
 .book-description{
-    
+    color: #b39000 !important;
+    font-family:"Iranian Sans Regular" !important;
+    text-align: right;
+    font-size: 14px;
+}
+.center{    
+  display: table !important;
+  margin: 0 auto !important;
 }
