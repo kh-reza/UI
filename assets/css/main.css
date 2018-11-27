@@ -526,5 +526,32 @@ transition: all 500ms ease-in;
         display: none !important;
     }
     
+
+}
+@media screen and (max-width:575.5px) {
+    
+    .border{
+        border: none !important;
+    }
     
 }
+@media screen and (min-width:575.5px) {
+    
+    .border{
+        border-right:1px solid #ffe165 !important;
+        border-left: none !important;
+        border-bottom: none !important;
+        border-top: none !important;
+    }
+    
+}
+@media screen and (min-width:400px) and (max-width:575.5px) {
+    
+    .img-resp{
+        max-width:100px;
+        float:  left !important;
+    }
+    
+}
+
+
