@@ -1,0 +1,49 @@
+.visible-xs{
+    display: none;
+}
+@media screen and (max-width:577px){
+    .visible-xs{
+        display: block;
+    }
+}
+
+/*gallery*/
+div.gallery img{
+    height: 280px;   
+}
+
+div.gallery {
+    width: 100%;   
+    min-height:350px;
+}
+
+div.desc {
+    margin-top:15px;
+}
+.pagin-nav{
+    margin-top: 40px;
+    margin-bottom: 80px;
+    box-shadow: none !important;
+    background-color: inherit !important;
+}
+
+.page-link{
+    
+    font-family:"Iranian Sans Regular" !important;
+    font-size:14px;
+    color: #b39000 !important;
+    margin: 0 4px;
+    border-radius: 3px;
+    background-color: #ffe165 !important;
+    border: 0.4px solid #b39000;
+}
+.page-link:hover{
+    color:white !important;
+    background-color: #2e3192 !important;
+    background-color: #0dc17a !important;
+}
+.page-link.active{
+    color:white !important;
+    
+    background-color: #2e3192 !important;
+}
