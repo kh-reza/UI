@@ -40,8 +40,7 @@ div.desc {
 .page-link:hover{
     color:white !important;
     background-color: #2e3192 !important;
-    background-color: #0dc17a !important;
-}
+ }
 .page-link.active{
     color:white !important;
     
