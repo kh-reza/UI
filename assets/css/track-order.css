@@ -1,0 +1,80 @@
+.row{
+    padding: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.deactive-img{
+    width: 110px;
+    position: relative;
+    left: 32%;
+    bottom: 5%;
+    top:28%;
+}
+.active-img{
+    width: 180px;
+    position: relative;
+    left: 20%;
+    bottom:0% !important;
+}
+.deactive-circle{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 102%;
+    left: 48%;
+}
+.active-circle{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 102%;
+    left: 48%;
+}
+@media screen and (max-width:767.5px){
+   .deactivate{
+       display: none !important;
+   } 
+}
+
+@media screen and (max-width:430px){
+    .active-img{
+        width: 150px;
+        left: 25%;
+    } 
+ }
+
+ @media screen and (max-width:380px){
+    .active-img{
+        width: 130px;
+        left: 40%;
+    } 
+ }
+ @media screen and (max-width:350px){
+    .active-img{
+        right: -35%;
+    } 
+    .active-circle{
+        left:30%;
+    }
+ }
+
+ @media screen and (max-width:1000px){
+    .active-img{
+        
+        left: 10%;
+    } 
+
+    .deactive-img{
+        
+        left: 25%;
+    } 
+ }
+
+ .cart-title{
+    height: 50px ;
+    color: #2e3192;
+    font-family:"Iranian Sans Regular" !important;
+    font-size:14px;
+    text-align: center;
+    margin:0px !important;
+}
