@@ -539,21 +539,21 @@ transition: all 500ms ease-in;
 }
 @media screen and (min-width:700px) and (max-width:1000px){
     
-    .carousel-cell{
+    .cc{
         width: 33.3% !important;
     }
     
 }
 @media screen and (min-width:350px) and (max-width:700px){
     
-    .carousel-cell{
+    .cc{
         width: 50% !important;
     }
     
 }
 @media screen and (max-width:350px){
     
-    .carousel-cell{
+    .cc{
         width: 100% !important;
     }
     
