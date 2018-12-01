@@ -1,0 +1,14 @@
+.writer-context{
+    color: #2e3192;
+    font-family:"Iranian Sans Regular" !important;
+    font-size:14px;
+    text-align: right !important;
+    margin:20px;
+}
+.writer-img{
+    float: right;
+    max-width:100%;
+    height:170px;
+    margin-left:15px;
+    margin-bottom:15px;
+}

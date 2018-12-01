@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/writer.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/books-list.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/flickity.css">
+    
+    <link href="assets/img/logo.jpg" type="image/gif">
+
+</head>
+<body>
+
+    <!--Logo bar-->
+    <nav class="navbar navbar-expand-md top-navbar" id="nav-top" style="min-height:135px;">
+        <div class="container my-nav-container" style="bottom:15px;"  id="my-nav-container">
+
+                <div class="col-lg-2" >
+                        <a class="navbar-brand"  href="#"><img style="height: 70px !important; width: 100% !important;" src="assets/img/brand.png" alt="انتشارات خادم الرضا" title="انتشارات خادم الرضا"></a>
+                    </div>
+
+                    <div class="col-lg-5"style="margin-right:1% !important;">
+                            <form class="form-inline my-form"  action="/action_page.php">
+                                <div class="input-group " style="width:100%;">
+                                    
+                                    <input  type="text" class="form-control" placeholder="جست و جو کنید...">
+                                  
+                                  <div class="input-group-prepend">
+                                    <button class="btn search-btn" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                  </div>
+                                  
+                                  </div> 
+                            </form>
+                        </div>
+
+                        
+            <div class="col-lg-2 " id="second" style="margin-right: 1% !important;">
+                    <button class="btn track-order-btn" type="button" style="width:100%;"> پیگیری سفارش </button>
+            
+                </div>
+
+            <div class="col-lg-2"  id="second"  style=" margin-right: 1% !important; float: left; direction: ltr !important;">
+                <button class="btn cart-btn" id="cart" type="button" style="width:100%;">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    سبد خرید
+                    <span class="badge">7</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+     <!--Navbar-->
+     <div class="my-nav-container" id="my-nav-container">
+        <div class="container-fluid nav-container" id="nav-container">
+        <nav class="navbar navbar-expand-md  main-navbar navbar-dark" id="nav-top second" style="min-height:55px;">
+            
+          <!-- Toggler/collapsibe Button -->
+          <button  class="navbar-toggler" style="color:white !important;" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon" style="color:white !important;"></span>
+          </button>
+        
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav nav-context">
+              <li class="nav-item my-nav-item">
+                <a class="nav-link" href="index.html"><i class="fas fa-home" style="font-size:25px !important;"></i></a>
+              </li>
+              <li class=" dropdown nav-item my-nav-item">
+                    <a class="nav-link dropdown-toggle" href="books-list.html" id="navbardrop" data-toggle="dropdown">منشورات <i class="fa fa-chevron-down" style="font-size: 10px !important;" aria-hidden="true"></i></a>
+    
+    
+                        <ul class="dropdown-menu" style="background:none; border:none;">
+                                <div class="mobile-menu container-fluid" >
+                                        <li class="dropdown-item dp"><a class="mobile-menu-item" href="books-list.html">محرم</a></li>
+                                        <li class="dropdown-item "><a class="mobile-menu-item" href="books-list.html">مبعث</a></li>
+                                        <li class="dropdown-item "><a class="mobile-menu-item" href="books-list.html">نیمه شعبان</a></li>
+                                        <li class="dropdown-item "><a class="mobile-menu-item" href="books-list.html">غدیر</a></li>
+                                    </div>    
+                            <div class="d-flex flex-row container mega-menu">
+                                        <li class="dropdown-item mega-menu-item">
+                                                <a href="books-list.html">
+                                                <img src="assets/img/g.jpg" alt="روضه الواعظین">
+                                                
+                                                <div class="mega-menu-desc">غدیر</div>
+                        
+                                                </a>
+                                            </li>
+                                        
+                                            <li class="dropdown-item mega-menu-item">
+                                                <a href="books-list.html">
+                                                <img src="assets/img/a.jpg" alt="روضه الواعظین">
+                                                
+                                                <div class="mega-menu-desc">محرم</div>
+                        
+                                            </a></li>
+                        
+                                            <li class="dropdown-item mega-menu-item">
+                                                <a href="books-list.html">
+                                                <img src="assets/img/r.jpg" alt="روضه الواعظین">
+                                                
+                                                <div class="mega-menu-desc">اربعین</div>
+                        
+                                            </a></li>
+                        
+                                            <li class="dropdown-item mega-menu-item">
+                                                <a href="books-list.html">
+                                                <img src="assets/img/z.jpg" alt="روضه الواعظین">
+                                                
+                                                <div class="mega-menu-desc">شعبان</div>
+                        
+                                            </a></li>
+                        
+                                            <li class="dropdown-item mega-menu-item">
+                                                <a href="books-list.html">
+                                                <img src="assets/img/r.jpg" alt="روضه الواعظین">
+                                                
+                                                <div class="mega-menu-desc">مبعث</div>
+                        
+                                            </a></li>
+                                </div>
+                                
+                                    
+                        </ul>
+                        
+                       
+                
+              </li>
+              <li class=" dropdown nav-item my-nav-item">
+                <a class="nav-link dropdown-toggle" href="books-list.html" id="navbardrop" data-toggle="dropdown">کتب مناسبتی <i class="fa fa-chevron-down" style="font-size: 10px !important;" aria-hidden="true"></i></a>
+    
+    
+                <ul class="dropdown-menu" style="background:none; border:none;">
+                        <div class="mobile-menu container-fluid" >
+                                <li class="dropdown-item dp"><a class="mobile-menu-item" href="books-list.html">محرم</a></li>
+                                <li class="dropdown-item "><a class="mobile-menu-item" href="books-list.html">مبعث</a></li>
+                                <li class="dropdown-item "><a class="mobile-menu-item" href="books-list.html">نیمه شعبان</a></li>
+                                <li class="dropdown-item "><a class="mobile-menu-item" href="books-list.html">غدیر</a></li>
+                            </div>    
+                            <div class="d-flex flex-row container mega-menu2">
+                                <li class="dropdown-item mega-menu-item">
+                                        <a href="books-list.html">
+                                        <img src="assets/img/g.jpg" alt="روضه الواعظین">
+                                        
+                                        <div class="mega-menu-desc">غدیر</div>
+                
+                                        </a>
+                                    </li>
+                                
+                                    <li class="dropdown-item mega-menu-item">
+                                        <a href="books-list.html">
+                                        <img src="assets/img/a.jpg" alt="روضه الواعظین">
+                                        
+                                        <div class="mega-menu-desc">محرم</div>
+                
+                                    </a></li>
+                
+                                    <li class="dropdown-item mega-menu-item">
+                                        <a href="books-list.html">
+                                        <img src="assets/img/r.jpg" alt="روضه الواعظین">
+                                        
+                                        <div class="mega-menu-desc">اربعین</div>
+                
+                                    </a></li>
+                
+                                    <li class="dropdown-item mega-menu-item">
+                                        <a href="books-list.html">
+                                        <img src="assets/img/z.jpg" alt="روضه الواعظین">
+                                        
+                                        <div class="mega-menu-desc">شعبان</div>
+                
+                                    </a></li>
+                
+                                    <li class="dropdown-item mega-menu-item">
+                                        <a href="books-list.html">
+                                        <img src="assets/img/r.jpg" alt="روضه الواعظین">
+                                        
+                                        <div class="mega-menu-desc">مبعث</div>
+                
+                                    </a></li>
+                        </div>
+                            
+                                
+                    </ul>
+                    
+                   
+            
+          </li>
+              <li class="nav-item my-nav-item">
+                <a class="nav-link" href="#">مؤلفین</a>
+              </li>
+              <li class="nav-item my-nav-item">
+                <a class="nav-link" href="books-list.html">پرفروش ها</a>
+              </li> 
+              
+              <li class="nav-item my-nav-item">
+                <a class="nav-link" href="#">تاریخچه</a>
+              </li> 
+              <li class="nav-item my-nav-item">
+                <a class="nav-link" href="#">درباره ما</a>
+              </li> 
+              <li class="nav-item my-nav-item">
+                <a class="nav-link" href="#">تماس با ما</a>
+              </li>       
+            </ul>
+          </div> 
+        </nav>
+        </div>
+    </div>
+
+    <!--Writer-->
+     <div class="container-fluid books-main-box" >
+
+            <div class="row">
+        
+                <div class="col-lg-1 col-md-1 col-sm-1"></div>
+        
+                <div class="col-lg-10 col-md-10 col-sm-10 d-flex flex-column ">
+                    
+                    <!--Title-->
+                    <div class="p-2 title-box justify-content-center ">سیمین دانشور</div>
+        
+                    <!--Books list box-->
+                    <div class="p-2 books-box " >
+                    
+                        <div class="row writer-context">
+
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+
+                                    <img class="writer-img img-responsive" src="assets/img/simin-daneshvar.jpg" alt="writer">
+
+                                    سیمین دانشور نویسنده و مترجم ایرانی و همسر جلال آل‌احمد بود و در اکثر فعالیت های فرهنگی و اجتماعی همسرش حضور و همکاری داشت. سیمین دانشور نخستین زن ایرانی بود که به صورتی حرفه‌ای در زبان فارسی داستان نوشت
+                                    مهم‌ترین اثر سیمین دانشور رمان سووشون است که نثری ساده دارد و به 17 زبان ترجمه شده است سووشون از جمله پرفروش‌ترین آثار ادبیات داستانی در ایران به شمار می‌رود. سیمین دانشور همچنین عضو و نخستین رئیس کانون نویسندگان ایران بود به طور کلی سیمین دانشور در آثار خود به مشکل هویت و جایگاه زن ایرانی در مرحله‌ای از تغییر  تحول اجتماعی می‌پردازد
+        
+                                    تحول اجتماعی می‌پردازد و تلاش زنان برای خودیابی را با انتقاد از جامعه‌ای ـ که دنیای زنان ناشناخته‌تر از دنیای مردان است ـ مورد بررسی قرار می‌دهد.
+         او در 8 اردیبهشت 1300 در شیراز به دنیا آمد. پدرش دکتر محمدعلی دانشور (احیاءالسلطنه) همان کسی است که سیمین دانشور در رمان «سووشون» از او به نام دکتر عبدالله خان یاد می‌کند؛ احیاءالسلطنه مردی با فرهنگ و ادب بود و عضو گروه حافظیون که شب‌های جمعه بر سر مزار حافظ جمع می‌شدند و یاد حافظ را زنده می‌داشتند. مادر سیمین دانشور قمرالسلطنه حکمت نام داشت. بانوی شاعر و هنرمند که نقاشی را به فرزندانش می‌آموخت و مدتی هم مدیر هنرستان دخترانه هنرهای شیراز بود سیمین سه برادر و دو خواهر داشت و در خانواده‌ای اهل ذوق و هنر پرورش یافت .
+        سیمین دانشور، این بانوی داستان‌سرا از کودکی با ادبیات و هنر توسط مادر و پدرش آشنا شد و دوران ابتدایی و متوسط را در مدرسه انگلیسی «مهرآئین» به تحصیل پرداخت و در امتحانات نهایی شاگرد اول سراسر کشور شد. سیمین سپس به تهران آمد و در دانشکده ادبیات دانشگاه تهران به تحصیل مشغول شد و در مدرسه‌ای آمریکایی در تهران اقامت گزید.
+        سیمین دانشور پس از یک دوره بیماری آنفلوآنزا، عصر روز 18 اسفند 1390 برابر با 8 مارس 2012 در 90 سالگی در خانه‌اش در شهر تهران درگذشت.
+                                
+                           
+
+                            </div>
+
+                        </div>
+
+                    </div>
+        
+                </div>
+                
+                <div class="col-lg-1 col-md-1 col-sm-1"></div>
+            
+            </div>
+            
+    </div>
+
+     <!--Books-->
+     <div class="container-fluid books-main-box" >
+
+            <div class="row">
+        
+                <div class="col-lg-1 col-md-1 col-sm-1"></div>
+        
+                <div class="col-lg-10 col-md-10 col-sm-10 d-flex flex-column ">
+                    
+                    <!--Title-->
+                    <div class="p-2 title-box justify-content-center ">آثار</div>
+        
+                    <!--Books list box-->
+                    <div class="p-2 books-box">
+                        
+                        <div class="row" style="margin:20px;">
+        
+                            <div class="col-2 visible-xs"></div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-8 cc" style="margin:30px 0px;">
+                            
+                                <div class="gallery ">
+                                    <a href="#">
+                                        <img src="assets/img/g.jpg" alt="روضه الواعظین">
+                                        
+                                        <div class="desc">روضه الواعظین</div>
+
+                                    </a>
+                                </div>
+
+                                <div class="gallery book-hv">
+                                    
+                                    <div class="book-title justify-content-center "> روضه الواعظین</div>
+
+                                    <button class="btn view-btn btn1" type="button"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                    <button class="btn view-btn " type="button"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                                                                          
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-2 visible-xs"></div>
+
+                            <div class="col-2 visible-xs"></div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-8 cc" style="margin:30px 0px;">
+                            
+                                <div class="gallery ">
+                                    <a href="#">
+                                        <img src="assets/img/r.jpg" alt="روضه الواعظین">
+                                        
+                                        <div class="desc">روضه الواعظین</div>
+
+                                    </a>
+                                </div>
+
+                                <div class="gallery book-hv">
+                                    
+                                    <div class="book-title justify-content-center "> روضه الواعظین</div>
+
+                                    <button class="btn view-btn btn1" type="button"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                    <button class="btn view-btn " type="button"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                                                                          
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-2 visible-xs"></div>
+
+                            <div class="col-2 visible-xs"></div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-8 cc" style="margin:30px 0px;">
+                            
+                                <div class="gallery ">
+                                    <a href="#">
+                                        <img src="assets/img/a.jpg" alt="روضه الواعظین">
+                                        
+                                        <div class="desc">روضه الواعظین</div>
+
+                                    </a>
+                                </div>
+
+                                <div class="gallery book-hv">
+                                    
+                                    <div class="book-title justify-content-center "> روضه الواعظین</div>
+
+                                    <button class="btn view-btn btn1" type="button"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                    <button class="btn view-btn " type="button"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                                                                          
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-2 visible-xs"></div>
+
+                            <div class="col-2 visible-xs"></div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-8 cc" style="margin:30px 0px;">
+                            
+                                <div class="gallery ">
+                                    <a href="#">
+                                        <img src="assets/img/z.jpg" alt="روضه الواعظین">
+                                        
+                                        <div class="desc">روضه الواعظین</div>
+
+                                    </a>
+                                </div>
+
+                                <div class="gallery book-hv">
+                                    
+                                    <div class="book-title justify-content-center "> روضه الواعظین</div>
+
+                                    <button class="btn view-btn btn1" type="button"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                    <button class="btn view-btn " type="button"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                                                                          
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-2 visible-xs"></div>
+
+                            <div class="col-2 visible-xs"></div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-8 cc" style="margin:30px 0px;">
+                            
+                                <div class="gallery ">
+                                    <a href="#">
+                                        <img src="assets/img/g.jpg" alt="روضه الواعظین">
+                                        
+                                        <div class="desc">روضه الواعظین</div>
+
+                                    </a>
+                                </div>
+
+                                <div class="gallery book-hv">
+                                    
+                                    <div class="book-title justify-content-center "> روضه الواعظین</div>
+
+                                    <button class="btn view-btn btn1" type="button"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                    <button class="btn view-btn " type="button"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                                                                          
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-2 visible-xs"></div>
+
+                            <div class="col-2 visible-xs"></div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-8 cc" style="margin:30px 0px;">
+                            
+                                <div class="gallery ">
+                                    <a href="#">
+                                        <img src="assets/img/r.jpg" alt="روضه الواعظین">
+                                        
+                                        <div class="desc">روضه الواعظین</div>
+
+                                    </a>
+                                </div>
+
+                                <div class="gallery book-hv">
+                                    
+                                    <div class="book-title justify-content-center "> روضه الواعظین</div>
+
+                                    <button class="btn view-btn btn1" type="button"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                    <button class="btn view-btn " type="button"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                                                                          
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-2 visible-xs"></div>
+
+                            <div class="col-2 visible-xs"></div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-8 cc" style="margin:30px 0px;">
+                            
+                                <div class="gallery ">
+                                    <a href="#">
+                                        <img src="assets/img/a.jpg" alt="روضه الواعظین">
+                                        
+                                        <div class="desc">روضه الواعظین</div>
+
+                                    </a>
+                                </div>
+
+                                <div class="gallery book-hv">
+                                    
+                                    <div class="book-title justify-content-center "> روضه الواعظین</div>
+
+                                    <button class="btn view-btn btn1" type="button"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                    <button class="btn view-btn " type="button"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                                                                          
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-2 visible-xs"></div>
+
+                            <div class="col-2 visible-xs"></div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-8 cc" style="margin:30px 0px;">
+                            
+                                <div class="gallery ">
+                                    <a href="#">
+                                        <img src="assets/img/z.jpg" alt="روضه الواعظین">
+                                        
+                                        <div class="desc">روضه الواعظین</div>
+
+                                    </a>
+                                </div>
+
+                                <div class="gallery book-hv">
+                                    
+                                    <div class="book-title justify-content-center "> روضه الواعظین</div>
+
+                                    <button class="btn view-btn btn1" type="button"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                    <button class="btn view-btn " type="button"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                                                                          
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-2 visible-xs"></div>
+
+                            
+
+                            
+
+                        </div>
+                        
+                        
+                    </div>
+        
+                </div>
+                
+                <div class="col-lg-1 col-md-1 col-sm-1"></div>
+            
+            </div>
+            
+    </div>
+
+    <!--Pagination-->
+    <div class="container">
+        <div class="pagin-nav">
+            <ul class="pagination justify-content-center">
+                
+                <li class="page-item"><a class="page-link active" href="#" >۱</a></li>
+                <li class="page-item"><a class="page-link" href="#" >۲</a></li>
+                <li class="page-item"><a class="page-link" href="#" >۳</a></li>
+                <li class="page-item"><a class="page-link" href="#" >۴</a></li>
+                <li class="page-item"><a class="page-link" href="#" >۵</a></li>
+            </ul>
+        </div>
+
+    </div>
+    
+   <!--Footer-->
+   <footer class="container-fluid my-footer" >
+        <div class="container">
+
+        <div class="row footer-box" style="direction: rtl; margin:0px 18px 0px 15px; padding: 40px 0px 0px 0px;">
+            
+                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7"> 
+                        <div class="contact-info d-flex  justify-content-between">
+                            
+                            <div class="p-2 flex-grow-3 " style="padding: 0px !important;">
+    
+                                <div class="p-2 contact-info">تلفن: ۳۷۷۳۱۲۶۵ / ۰۲۵۳۷۷۳۱۲۶۵ </div>
+                                <div class="p-2 contact-info">همراه: ۰۹۱۲۱۲۳۴۵۶۷ / ۰۹۱۲۱۲۳۴۵۶۷</div>
+                                <div class="p-2 contact-info">فکس: ۰۲۳۷۷۳۱۲۶۵</div>
+                                <div class="p-2 contact-info"> رایانامه: <data style="font-family:'Tahoma Regular'">qombook@gmail.com</data>  </div>
+                                <div class="p-2 contact-info">آدرس: 
+                                        قم - صفاییه کوچه ۲۸ - انتهای کوچه پلاک ۲۸۴</div>
+    
+                            </div>
+    
+                            <div class="p-2 col-md-2  " style=" padding:0px 5px !important;">
+                               
+                                    <img class="img-resp" src="assets/img/enamad.png" style="width:100%;">
+                            
+                           
+                        </div>
+    
+                        </div>
+                </div> 
+
+            <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 border" > 
+                <img src="assets/img/map.png"  style="border-radius:5px;width: 100%; height: 200px; margin:0px 0px 20px 0px;">
+            </div>    
+              
+        </div>
+
+        <div class="d-flex  flex-column">
+            
+            <div class="p-2 d-flex contact-info justify-content-center" style="font-size: 20px !important; padding-bottom: 0px !important;">
+               
+                <div class='p-2'><i class='fab fa-instagram'></i></div>
+                <div class='p-2'><i class="fas fa-envelope"></i></div>
+                 
+            </div>
+
+            <div class="p-2 justify-content-center contact-info" style="font-size:12px; text-align:center !important; padding-top: 0px !important; padding-bottom: 20px !important;">
+
+                تمامی حقوق این سایت مربوط به انتشارات خادم الرضا می باشد. طراحی و توسعه توسط تیم <a href="#" style="color:inherit;">معماران دهکده مجازی</a>
+            
+            </div>
+
+        </div>
+
+        </div>
+             
+    </footer>
+
+
+    <!-- js -->
+    <script src="assets/js/jquery-1.11.3.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/flickity.pkgd.min.js"></script>
+    
+    <script>
+        $('.main-carousel').flickity({
+        // options
+        cellAlign: 'left',
+        contain: true
+});
+    $(".carousel").flickity({
+        cellAlign: 'left',
+        contain: true
+      });
+    $(".carousel-cell").css("background-image-width" , "100%");
+    $(".carousel1").flickity({
+        cellAlign: 'left',
+        contain: true
+      });
+    $(".carousel-cell1").css("background-image-width" , "100%");
+    </script>
+</body>
+</html>
