@@ -11,10 +11,7 @@
     text-align: right;
     font-size: 14px;
 }
-.center{    
-  display: table !important;
-  margin: 0 auto !important;
-}
+
 .input1{
     border-radius : 0 !important;
     border-color: #b39000 !important;  

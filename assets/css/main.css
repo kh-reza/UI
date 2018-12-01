@@ -268,14 +268,17 @@ input{
 
 
 .books-main-box{
-    margin-top: 120px;
+    margin-top: 40px;
 }
 div.gallery img { 
     width: 95%;
     height: 250px;
     margin:5px;
 }
-
+.center{    
+    display: table !important;
+    margin: 0 auto !important;
+  }
 div.desc {
     color: #2e3192;
     font-family:"Iranian Sans Regular" !important;
