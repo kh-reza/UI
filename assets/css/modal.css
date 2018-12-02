@@ -1,0 +1,26 @@
+.modal-dialog {
+    width: 50%;
+  }
+  .title-box{
+    background-color: #ffce00;
+    color: #2e3192;
+    font-family:"Iranian Sans Regular" !important;
+    font-size:16px;
+    text-align: center;
+    margin:0px !important;
+    padding: 2px 0px !important;
+  }
+  .my-modal-content{
+    color: #2e3192;
+    font-family:"Iranian Sans Regular" !important;
+    font-size:14px;
+    text-align: center;
+    margin:0px !important;
+}
+.my-modal-btn{    
+    background-color: #2e3192 !important;
+    color: white !important;
+    font-size: 13px ;
+    font-family:"Iranian Sans Regular" !important;
+    
+}
