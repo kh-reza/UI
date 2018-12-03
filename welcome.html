@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/welcome.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/flickity.css">
+    
+    <link href="assets/img/logo.jpg" type="image/gif">
+
+</head>
+
+<body class="bodybg">
+
+    
+
+    <div class="container-fluid " >
+
+        <div class="row">
+
+            <div class="col-lg-1 col-md-1 col-sm-1 col-1"></div>
+
+            <div class="col-lg-10 col-md-10 col-sm-10 col-10 containerbg">
+
+                <div class="row" style="margin-top:80px;">
+
+                    <div class="col-lg-1 col-md-1 col-sm-1 col-1" ></div>
+
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-10 ">
+
+                        <div >
+                            <img class="img-responsive wlogoimg center" src="assets/img/wlogo.png" alt="خادم الرضا" > 
+                        </div>
+                        
+                        <div class="wmgdiv">
+                            <img class="img-responsive wtext center" src="assets/img/welcome-text.png" alt="خوش آمدید" > 
+                        </div>
+
+                        <div class="carousel wslider wmgdiv" id="wslider" data-flickity='{autoPlay: 1500}' >
+                                <div class="carousel-cell wcell" style="width:100%;  height: 300px;">
+                                      
+                                  <img src="assets/img/slider1.jpg" class="img-responsive " style="width:100%;  height: 300px;">
+                                  
+                                  <div class="cellimgdesc">
+                                        <img class="img-responsive center cellimg" src="assets/img/slider-text.png" alt="خوش آمدید" > 
+                                    </div>
+                                </div>
+                                
+                                <div class="carousel-cell wcell" style="width:100%;  height: 300px;">
+                                      
+                                        <img src="assets/img/slider2.jpg" class="img-responsive " style="width:100%;  height: 300px;">
+                                        
+                                        <div class="cellimgdesc">
+                                              <img class="img-responsive center cellimg" src="assets/img/slider-text.png" alt="خوش آمدید" > 
+                                          </div>
+                                      </div>
+                                
+                  
+                      </div>
+              
+                      <div class="arrow-box" >
+              
+                      </div>
+
+                      <!--Payment button-->
+                    <div class="container">
+                    
+                        <button class="btn cart-btn center " type="button" style="margin-top: 40px !important; margin-bottom: 80px !important; width:auto !important;">ورود به سایت</button>
+
+                    </div>
+
+                    </div>
+
+                    <div class="col-lg-1 col-md-1 col-sm-1 col-1"></div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-1 col-md-1 col-sm-1 col-1"></div>
+
+        </div>
+
+    </div>
+
+
+    
+
+    <!-- js -->
+    <script src="assets/js/jquery-1.11.3.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/flickity.pkgd.min.js"></script>
+    
+    <script>
+        $('.main-carousel').flickity({
+        // options
+        cellAlign: 'left',
+        contain: true
+});
+    $(".carousel").flickity({
+        cellAlign: 'left',
+        contain: true
+      });
+    $(".carousel-cell").css("background-image-width" , "100%");
+    $(".carousel1").flickity({
+        cellAlign: 'left',
+        contain: true
+      });
+    $(".carousel-cell1").css("background-image-width" , "100%");
+    </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+.bodybg{
+    background-color: #f9efca !important;
+}
+.containerbg{
+    background-image: url('../img/background.png')  !important;
+    height: auto;
+    background-repeat: no-repeat;
+}
+.wlogoimg{
+    max-width: 70%;
+}
+.wtext{
+    max-width: 100%;
+}
+.wmgdiv{
+    margin-top:50px;
+}
+
+.wslider{
+    position: relative !important;
+    height: 304px;
+    background-color:white;
+    border:1px solid #b39000;
+}
+.wcell{
+    padding: 0px 2px;
+}
+.arrow-box{
+    background-color: #ffce00;
+    width:100%;
+    height: 30px ;
+    position: relative;
+    bottom: 31px;
+    opacity: 0.8;
+}
+.wslider .flickity-page-dots {
+    bottom: 5px !important;
+    z-index: 100;
+    opacity: 1 ;
+  }
+  /* white circles */
+  .wslider .flickity-page-dots .dot {
+    margin: 2px !important;
+    width: 10px !important;
+    height: 10px !important;
+    opacity: 1 !important;
+    background: white !important;
+  }
+  /* fill-in selected dot */
+  .wslider .flickity-page-dots .dot.is-selected {
+    background: #2e3192 !important;
+  }
+
+
+ /* smaller, dark, rounded square */
+.wslider .flickity-prev-next-button {
+    background-color: #b39000 !important;
+    width:30px !important;
+    height: 30px !important;
+    border-radius: 0px !important;
+    z-index: 100 !important;
+    opacity: 1 !important;
+  }
+  .wslider .flickity-prev-next-button:hover {
+    background: #2e3192 !important;
+  }
+  /* arrow color */
+  .wslider .flickity-prev-next-button .arrow {
+    fill: white !important;
+  }
+  .wslider.flickity-prev-next-button.no-svg {
+    color: white !important;
+  }
+  /* position outside */
+  .wslider .flickity-prev-next-button.previous {
+    top: 287px !important;
+    left: 0px !important;
+  }
+  .wslider .flickity-prev-next-button.next {
+    top: 287px !important;
+    right: 0px !important;
+  }
+.cellimgdesc{
+    position: absolute;
+    bottom: 120px;
+}
+.cellimg{
+    width:80%;
+     height: 120px;
+     background-color:rgba(46, 49, 146, 0.6);
+}
